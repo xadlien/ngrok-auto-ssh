@@ -15,3 +15,6 @@ mv auto-start-ssh.sh /home/ngrok/bin/
 
 # install requirements
 apt update && apt install mailutils
+
+# set api key
+/home/ngrok/bin/ngrok authtoken #put your auth token here
