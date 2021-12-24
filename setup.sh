@@ -21,7 +21,7 @@ apt update && apt install mailutils sendmail
 /home/ngrok/bin/ngrok authtoken #put your auth token here
 
 # install service file
-cp ngrok-ssh.service /etc/init.d/
+cp ngrok-ssh.service /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable ngrok-ssh.service 
 systemctl start ngrok-ssh.service 
