@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenSSH ngrok tunnel
+After=network.target
+
+[Service]
+ExecStart=/home/ngrok/bin/auto-start-ssh.sh
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target
