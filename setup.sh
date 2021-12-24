@@ -7,7 +7,7 @@ chown ngrok /home/ngrok/bin
 
 # install binary
 curl 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.tgz' -o ngrok.tgz
-tar -xvf ngrok.tar.gz
+tar -xvf ngrok.tgz
 mv ngrok /home/ngrok/bin/
 
 # install script
