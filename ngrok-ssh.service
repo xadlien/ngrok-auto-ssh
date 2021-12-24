@@ -3,7 +3,7 @@ Description=OpenSSH ngrok tunnel
 After=network.target
 
 [Service]
-ExecStart=/home/ngrok/bin/auto-start-ssh.sh
+ExecStart=/bin/bash /home/ngrok/bin/auto-start-ssh.sh
 ExecReload=/bin/kill -HUP $MAINPID
 KillMode=process
 Restart=on-failure

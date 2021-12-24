@@ -12,9 +12,16 @@ mv ngrok /home/ngrok/bin/
 
 # install script
 mv auto-start-ssh.sh /home/ngrok/bin/
+chmod 700 /home/ngrok/bin/auto-start-ssh.sh
 
 # install requirements
-apt update && apt install mailutils
+apt update && apt install mailutils sendmail
 
 # set api key
 /home/ngrok/bin/ngrok authtoken #put your auth token here
+
+# install service file
+cp ngrok-ssh.service /etc/init.d/
+systemctl daemon-reload
+systemctl enable ngrok-ssh.service 
+systemctl start ngrok-ssh.service 
