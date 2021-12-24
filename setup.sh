@@ -11,7 +11,7 @@ tar -xvf ngrok.tgz
 mv ngrok /home/ngrok/bin/
 
 # install script
-mv auto-start-ssh.sh /home/ngrok/bin/
+cp auto-start-ssh.sh /home/ngrok/bin/
 chmod 700 /home/ngrok/bin/auto-start-ssh.sh
 
 # install requirements
