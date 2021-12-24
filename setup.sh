@@ -15,7 +15,7 @@ mv auto-start-ssh.sh /home/ngrok/bin/
 chmod 700 /home/ngrok/bin/auto-start-ssh.sh
 
 # install requirements
-apt update && apt install mailutils sendmail
+apt update && apt install -y mailutils sendmail
 
 # set api key
 /home/ngrok/bin/ngrok authtoken #put your auth token here
